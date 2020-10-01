@@ -12,6 +12,6 @@ int rob(vector<int>& nums)
         {
             dp[i]=max(dp[i-1],dp[i-2]+nums[i]);
         }
-        return dp[nums.size()-1];
+        return dp[l-1];
         
     }
